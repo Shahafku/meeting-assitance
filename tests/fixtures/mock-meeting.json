@@ -1,0 +1,18 @@
+{
+  "title": "Mock PM interview",
+  "scenario": "interview",
+  "context": [
+    {
+      "name": "Company brief",
+      "kind": "paste",
+      "content": "Acme Robotics builds warehouse automation robots.\nInterviewer: Dana Levi, VP Product.\nThey just launched the PickBot 3 line and are expanding to Europe.\nMy angle: 6 years PM experience, shipped two 0-to-1 logistics products."
+    }
+  ],
+  "script": [
+    { "atMs": 1000, "channel": 1, "speaker": 0, "text": "Thanks for joining today. Tell me a little about yourself.", "durationMs": 4000 },
+    { "atMs": 6000, "channel": 0, "text": "Sure! I have been a product manager for six years, mostly in logistics.", "durationMs": 5000 },
+    { "atMs": 12000, "channel": 1, "speaker": 0, "text": "Interesting. How would you approach launching a hardware product in a new market?", "durationMs": 6000 },
+    { "atMs": 19000, "channel": 1, "speaker": 1, "text": "And I would add, what metrics would you track in the first quarter?", "durationMs": 5000 },
+    { "atMs": 25000, "channel": 0, "text": "Great questions. Let me think about the launch sequencing first.", "durationMs": 4000 }
+  ]
+}
