@@ -140,11 +140,11 @@ export class DeepgramProvider implements SttProvider {
       encoding: 'linear16',
       sample_rate: opts.sampleRate,
       channels: opts.channels,
-      multichannel: true,
-      diarize: true,
-      smart_format: true,
-      punctuate: true,
-      interim_results: false,
+      multichannel: 'true',
+      diarize: 'true',
+      smart_format: 'true',
+      punctuate: 'true',
+      interim_results: 'false',
       Authorization: `token ${this.apiKey}`
     })
     const stream = new DeepgramStream(socket)
