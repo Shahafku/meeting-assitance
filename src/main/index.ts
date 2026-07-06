@@ -126,7 +126,8 @@ function createMainWindow(): void {
 
 function createOverlayWindow(): void {
   if (overlayWindow) {
-    overlayWindow.show()
+    // Never steal focus mid-call — surface the window without activating it.
+    if (!overlayWindow.isVisible()) overlayWindow.showInactive()
     return
   }
   overlayWindow = new BrowserWindow({
